@@ -1,0 +1,15 @@
+{
+  "name": "Electro Tab",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "action": {
+    "default_icon": "logo.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "icons": {
+    "128": "logo.png"
+  },
+  "author": "divyanshuvermaji@gmail.com"
+}

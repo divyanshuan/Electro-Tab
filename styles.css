@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+body {
+  background: url("./backgroung.jpg");
+  background-size: cover;
+  min-height: 100vh;
+}
+.glass-effect {
+  width: 35%;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.075);
+}
+.main_section {
+  height: 60%;
+  width: 80%;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 10% 0 0 10%;
+  display: grid;
+  grid-template-rows: auto repeat(4);
+}
+.container {
+  display: grid;
+  grid-template-columns: 27% 50px auto;
+  opacity: 0.6;
+}
+
+.head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+}
+.head h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  cursor: default;
+}
+.head p {
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  opacity: 0;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  padding-left: 1rem;
+  opacity: 0;
+}
+.icon {
+  height: 2.5rem;
+  transform: scale(0.5);
+  transition: transform 1s ease-in-out 0s;
+}
+.icons .icon:hover {
+  transform: scale(1.2);
+}
+
+.container:hover {
+  transition: opacity 200ms ease-in-out 0s;
+  opacity: 1;
+}
+.container:hover .arrow {
+  transition: color, opacity 1200ms ease-in-out 0.2s;
+  opacity: 1;
+}
+.container:hover .icons {
+  transition: opacity 800ms ease-in-out 0s;
+  opacity: 1;
+}
+.container:hover .icon {
+  transform: scale(1);
+}
+
+.color1 {
+  color: #85b7cf;
+}
+
+.color2 {
+  color: #8879cd;
+}
+.color3 {
+  color: #c86c6c;
+}
+.color4 {
+  color: #c6a96f;
+}
